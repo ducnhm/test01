@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		
+		<title>Title Page</title>
+
+		<!-- Bootstrap CSS -->
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!-- jquery min --> 
+		 <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- login and register -->
+		<script type="text/javascript" src="js/main.js"></script>
+
+		
+		
+
+
+		
+    	
+   
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header class="container-fluid">
+			<div class="row bg-grey">
+				<div class="col-md-5 col-md-offset-7">
+				<div class="top-header cl-grey-2 font-12 ">
+					<div class="box-top-header"><a href="#" class="cl-grey-2"><p data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in cl-grey-2 font-12"></span> Đăng nhập</p></a></div>
+					<div class="box-top-header"><p><span class="glyphicon glyphicon-log-out cl-grey-2 font-12"></span> Đăng xuất</p></div>
+					<div class="box-top-header"><p><span class="glyphicon glyphicon-heart cl-grey-2 font-12"></span> Yêu thích</p></div>
+					<div class="box-top-header"><p><span class="glyphicon glyphicon-user cl-grey-2 font-12"></span> Tài khoản</p></div>
+
+					
+
+				</div>
+				</div>
+			</div>
+			<!-- login and register dialogbox-->
+			<div class="container">
+			  
+			  <!-- Trigger the modal with a button -->
+			  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>-->
+
+			  <!-- Modal -->
+			  <div class="modal fade" id="myModal" role="dialog">
+			    <div class="modal-dialog modal-lg">
+			      
+			        <!--model -->
+			        
+			      <div class="col-md-6 col-md-offset-3">
+			        <div class="panel panel-login">
+			          <div class="panel-heading">
+			            <div class="row">
+			              <div class="col-xs-6">
+			                <a href="#" class="active txt-red" id="login-form-link">Đăng nhập</a>
+			              </div>
+			              <div class="col-xs-6">
+			                <a href="#" id="register-form-link">Đăng ký</a>
+			              </div>
+			            </div>
+			            <hr>
+			          </div>
+			          <div class="panel-body">
+			            <div class="row">
+			              <div class="col-lg-12">
+			                <form id="login-form" action="?action=login" method="post" role="form" style="display: block;">
+			                  <div class="form-group">
+			                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Tên đăng nhập" value="">
+			                  </div>
+			                  <div class="form-group">
+			                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Mật khẩu">
+			                  </div>
+			                  <div class="form-group text-center">
+			                    <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+			                    <label for="remember"> Ghi nhớ</label>
+			                  </div>
+			                  <div class="form-group">
+			                    <div class="row">
+			                      <div class="col-sm-6 col-sm-offset-3">
+			                        <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn-login" value="Đăng nhập">
+			                      </div>
+			                    </div>
+			                  </div>
+			                  <div class="form-group">
+			                    <div class="row">
+			                      <div class="col-lg-12">
+			                        <div class="text-center">
+			                          <a href="http://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+			                        </div>
+			                      </div>
+			                    </div>
+			                  </div>
+			                </form>
+			                <form id="register-form" action="?action=register" method="post" role="form" style="display: none;">
+			                  <div class="form-group">
+			                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Tên đăng nhập" value="">
+			                  </div>
+			                  <div class="form-group">
+			                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+			                  </div>
+			                  <div class="form-group">
+			                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Mật khẩu">
+			                  </div>
+			                  <div class="form-group">
+			                    <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Nhập lại mật khẩu">
+			                  </div>
+			                  <div class="form-group">
+			                    <div class="row">
+			                      <div class="col-sm-6 col-sm-offset-3">
+			                        <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn-register bg-green" value="Đăng ký">
+			                      </div>
+			                    </div>
+			                  </div>
+			                </form>
+			              </div>
+			          
+			            </div>
+			          
+			          </div>
+			             <div class="modal-footer">
+			          <button type="button" class="btn txt-white bg-red" data-dismiss="modal">Thoát</button>
+			        </div>
+			        </div>
+			      
+			   
+			        <!--model -->
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+<!-- login and register dialogbox-->
+			<div class="row bg-grey-3">
+				<div class="col-xs-4 col-md-2">
+					<img class="logo" src="img/logo.png">
+				</div>
+				<div class="col-xs-4 col-md-8">
+    				<center>
+			            <div class="search">
+			            	<form class="navbar-form navbar-middle" role="search">
+	    						<div class="form-group form-search">
+	        						<input type="text" size="30" class="form-control" placeholder="Tìm kiếm">
+	    						</div>
+	    						<button type="submit" class="btn btn-default bg-red cl-white form-search"><span class="glyphicon glyphicon-search"></span></button>
+							</form>
+			            </div> 
+                       </center>
+        		</div>
+				<div class="col-xs-4 col-md-2">
+					<div class="cart bg-green">
+						<span class="glyphicon glyphicon-shopping-cart cl-white"></span>
+						<div class="htron-sm bg-grey"><p class="cl-white font-12">0</p></div>
+						
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row bg-green">
+				
+					<div class="col-md-2 bg-red">
+						<div class="title-category cl-white bold"><div class="icon-category"><span class="glyphicon glyphicon-align-justify"></span></div><p>DANH MỤC</p> </div>
+					</div>
+					<div class="col-md-10">
+						<div class="menu cl-white bold">
+							<ul>
+								<li>TRANG CHỦ
+									<ul>
+										<li>asdasd</li>
+										<li>asdasd</li>
+										<li>asdasd</li>
+										<li>asdasd
+											<ul>
+												<li>asdasd</li>
+												<li>asdasd</li>
+												<li>asdasd</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>TRANG CHỦ</li>
+								<li>TRANG CHỦ</li>
+								<li>TRANG CHỦ</li>
+								<li>TRANG CHỦ</li>
+							</ul>
+						</div>
+					</div>
+				
+			</div>
+		</header>
+
+		<section class="container-fluid bg-grey-3">
+			<div class="row">
+				<div class="col-md-2 bg-grey margin-top">
+					<div class="category-slider">
+					<ul class="cl-grey">
+						<li>Categogy <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						<li>Categogy <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						<li>Categogy <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						<li>Categogy <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						<li>Categogy <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						<li>Categogy <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						<li>Categogy <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						
+
+					</ul>
+					</div>
+				</div>
+				<div class="col-md-10 margin-top">
+					<div class="slider bg-grey">
+						<img id="slide" src="img/banner.jpg">
+					</div>
+					<button class="next" onclick="next()"><span class="cl-grey-2 bold glyphicon glyphicon-chevron-right"></span></button> 
+					<button class="prev" onclick="prev()"><span class="cl-grey-2 bold glyphicon glyphicon-chevron-left"></span></button> 
+
+					<script type="text/javascript">
+					window.onload = function(){
+							setInterval("next()",3000);
+						}
+							var index = 0;
+							var imglist = new Array();
+							imglist[0] = "img/banner.jpg";
+							imglist[1] = "img/banner1.jpg";
+							imglist[2] = "img/banner2.jpg";
+							imglist[3] = "img/banner3.jpg";
+
+
+
+						function next() {
+							index++;
+							if(index > imglist.length-1){
+								index = 0;
+							} document.images["slide"].src = imglist[index];
+						}
+						function prev() {
+							index--;
+							if(index < 0){
+								index = imglist.length-1;
+							}
+							document.images["slide"].src = imglist[index];
+						}
+
+							
+
+							
+					</script>
+				</div>
+			</div>
+			
+
+			<!-- product detail -->
+			<div class="container bg-white margin-top-20 margin-bot-20 ">	
+				
+					<div class="row bg-red"><h4 class="cl-white txt-center"><span class="glyphicon glyphicon-shopping-cart"></span> Giỏ hàng</h4></div>
+					<table class="table">
+						<tr class="txt-center cl-grey-4 bold" style="border: none;">
+							<td>Stt</td>
+							<td>Tên sản phẩm</td>
+							<td>Giá</td>
+							<td>Số lượng</td>
+							<td>Tổng</td>
+							<td>Xóa</td>
+						</tr>
+						<tr class="cl-grey txt-center">
+							<td>1</td>
+							<td>Giày lười Name</td>
+							<td>200.000 <u>đ</u></td>
+							<td><center><input type="text" size="5" class="form-control" style="width: 60px" value="1"></input></center></td>
+							<td>200.000 <u>đ</td>
+							<td><span class="glyphicon glyphicon-trash cl-red"></td>
+						</tr>
+						<tr class="cl-grey txt-center">
+							<td>1</td>
+							<td>Giày lười Name</td>
+							<td>200.000 <u>đ</u></td>
+							<td><center><input type="text" size="5" class="form-control" style="width: 60px" value="1"></input></td>
+							<td>200.000 <u>đ</td>
+							<td><span class="glyphicon glyphicon-trash cl-red"></td>
+						</tr>
+					</table>
+					<hr>
+					<div class="col-md-2 col-md-offset-10 margin-bot-20"><button class="btn-refresh btn bg-red cl-white"><span class="glyphicon glyphicon-refresh"></span> Cập nhập giỏ hàng</button></div>
+					<div class="clear"></div>
+					<div class="row bg-grey">
+						<div class="box-cart-bot">
+							<div class="col-md-2 cl-white"><button type="submit" class="btn bg-green cl-white"><span class="glyphicon glyphicon-ok"></span> Tiếp tục mua hàng</button></div>
+
+							<div class="col-md-3 col-md-offset-5 cl-white"><p class="txt-center">Tổng <span class="txt-total cl-red bold">1000.000<u>đ</u></span></p></div>
+
+							<div class="col-md-2 cl-white"><button type="submit" class="btn-refresh btn bg-red cl-white"><span class="glyphicon glyphicon-usd"></span> Tiến hành thanh toán</button></div>
+						</div>
+					</div>
+
+
+			</div>
+			<!-- product detail -->
+
+
+			
+		</section>
+		<footer class="container-fluid bg-grey-3">
+			<div class="row margin-top-40">
+				<div class="cooperate bg-white cl-white margin-bot-20">đá</div>
+			</div>
+			<div class="row bg-grey">
+				<div class="col-md-3">
+					
+				</div>
+				<div class="col-md-3">
+					<div class="box-footer-1">
+						<img src="img/icon-service-1.png">
+						<p class="cl-white bold">Miễn phí giao hàng</p>
+						<p class="cl-grey">Cho đơn hàng trên 15 triệu</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="box-footer-1">
+						<img src="img/icon-service-2.png">
+						<p class="cl-white bold">Trở thành thành viên vip</p>
+						<p class="cl-grey">Chi với đơn hàng trên 2 triệu đồng</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="box-footer-1">
+						<img src="img/icon-service-3.png">
+						<p class="cl-white bold">Hỗ trợ khách hàng 24/24</p>
+						<p class="cl-grey">Tất cả các ngày trong tuần</p>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="row bg-grey-2">
+				<div class="col-md-3">
+					<div class="box-footer-4 bg-green"></div>
+				</div>
+				<div class="col-md-9">
+					<div class="box-footer-2">
+						<p class="cl-white bold">Đăng ký nhận tin mới</p> 
+						<p class="cl-grey">Đăng nhận các tin chương trình khuyến mãi sớm nhất</p>
+						<center>
+				            <div class="search">
+				            	<form class="navbar-form navbar-middle" role="search">
+	    						<div class="form-group form-search">
+	        						<input type="text" size="30" class="form-control" placeholder="Email của bạn ...">
+	    						</div>
+	    						<button type="submit" class="btn bg-green cl-white form-search"><span class="glyphicon glyphicon-send"></span></button>
+							</form>
+				            </div>
+	                       </center>
+
+					</div>
+					<hr class="bg-grey">
+					<div class="box-footer-3">
+						<p class="bold cl-white">Phương thức thanh toán</p> <br>
+						<img src="img/payment.png">
+						
+					</div>
+
+				</div>
+			</div>
+
+		</footer>
+
+	</body>
+</html>

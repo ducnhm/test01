@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Liên hệ</title>
+
+		<!-- Bootstrap CSS -->
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/contact.css">
+		
+		<!-- jquery min --> 
+		 <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- login and register -->
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<!-- đánh ggias ngôi sao -->
+		<link rel="stylesheet" type="text/css" href="css/rateit.css">
+		<script type="text/javascript" src="js/jquery.rateit.js"></script>
+
+
+		
+		
+
+
+		
+    	
+   
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header class="container-fluid">
+			<div class="row bg-grey">
+				<div class="col-md-5 col-md-offset-7">
+				<div class="top-header cl-grey-2 font-12 ">
+					<div class="box-top-header"><a href="#" class="cl-grey-2"><p data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in cl-grey-2 font-12"></span> Đăng nhập</p></a></div>
+					<div class="box-top-header"><p><span class="glyphicon glyphicon glyphicon-pencil cl-grey-2 font-12"></span> Đăng ký</p></div>
+					<div class="box-top-header"><p><span class="glyphicon glyphicon-heart cl-grey-2 font-12"></span> Yêu thích</p></div>
+					<div class="box-top-header"><p><span class="glyphicon glyphicon-user cl-grey-2 font-12"></span> Tài khoản</p></div>
+
+					
+
+				</div>
+				</div>
+			</div>
+			<!-- login and register dialogbox-->
+			<div class="container">
+			  
+			  <!-- Trigger the modal with a button -->
+			  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>-->
+
+			  <!-- Modal -->
+			  <div class="modal fade" id="myModal" role="dialog">
+			    <div class="modal-dialog modal-lg">
+			      
+			        <!--model -->
+			        
+			      <div class="col-md-6 col-md-offset-3">
+			        <div class="panel panel-login">
+			          <div class="panel-heading">
+			            <div class="row">
+			              <div class="col-xs-6">
+			                <a href="#" class="active txt-red" id="login-form-link">Đăng nhập</a>
+			              </div>
+			              <div class="col-xs-6">
+			                <a href="#" id="register-form-link">Đăng ký</a>
+			              </div>
+			            </div>
+			            <hr>
+			          </div>
+			          <div class="panel-body">
+			            <div class="row">
+			              <div class="col-lg-12">
+			                <form id="login-form" action="?action=login" method="post" role="form" style="display: block;">
+			                  <div class="form-group">
+			                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Tên đăng nhập" value="">
+			                  </div>
+			                  <div class="form-group">
+			                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Mật khẩu">
+			                  </div>
+			                  <div class="form-group text-center">
+			                    <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+			                    <label for="remember"> Ghi nhớ</label>
+			                  </div>
+			                  <div class="form-group">
+			                    <div class="row">
+			                      <div class="col-sm-6 col-sm-offset-3">
+			                        <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn-login" value="Đăng nhập">
+			                      </div>
+			                    </div>
+			                  </div>
+			                  <div class="form-group">
+			                    <div class="row">
+			                      <div class="col-lg-12">
+			                        <div class="text-center">
+			                          <a href="http://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+			                        </div>
+			                      </div>
+			                    </div>
+			                  </div>
+			                </form>
+			                <form id="register-form" action="?action=register" method="post" role="form" style="display: none;">
+			                  <div class="form-group">
+			                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Tên đăng nhập" value="">
+			                  </div>
+			                  <div class="form-group">
+			                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+			                  </div>
+			                  <div class="form-group">
+			                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Mật khẩu">
+			                  </div>
+			                  <div class="form-group">
+			                    <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Nhập lại mật khẩu">
+			                  </div>
+			                  <div class="form-group">
+			                    <div class="row">
+			                      <div class="col-sm-6 col-sm-offset-3">
+			                        <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn-register bg-green" value="Đăng ký">
+			                      </div>
+			                    </div>
+			                  </div>
+			                </form>
+			              </div>
+			          
+			            </div>
+			          
+			          </div>
+			             <div class="modal-footer">
+			          <button type="button" class="btn txt-white bg-red" data-dismiss="modal">Thoát</button>
+			        </div>
+			        </div>
+			      
+			   
+			        <!--model -->
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+<!-- login and register dialogbox-->
+			<div class="row bg-grey-3">
+				<div class="col-xs-12 col-md-2">
+					<div class="logo cl-red bold" ><p>Shoe's</p></div>
+				</div>
+				<div class="col-xs-12 col-md-8">
+    				<center>
+			            <div class="search">
+			            	<form class="navbar-form navbar-middle" role="search">
+	    						<div class="form-group form-search">
+	        						<input type="text" size="30" class="form-control" placeholder="Tìm kiếm">
+	    						</div>
+	    						<button type="submit" class="btn btn-default bg-red cl-white form-search"><span class="glyphicon glyphicon-search"></span></button>
+							</form>
+			            </div> 
+                       </center>
+        		</div>
+				<div class="col-xs-12 col-md-2">
+					<div class="cart bg-green">
+						<span class="glyphicon glyphicon-shopping-cart cl-white"></span>
+						<div class="htron-sm bg-grey"><p class="cl-white font-12">0</p></div>
+						
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row bg-green">
+				
+					<div class="col-md-2 bg-red">
+						<div class="title-category cl-white bold"><div class="icon-category"><span class="glyphicon glyphicon-align-justify"></span></div><p>DANH MỤC</p> </div>
+					</div>
+					<div class="col-md-10">
+						<div class="menu cl-white bold">
+							<ul>
+								<li><a href="index.html">TRANG CHỦ</a>
+									
+								</li>
+								<li><a href="product.html">GIÀY NAM</a>
+									<ul>
+										<li>Giày Tây</li>
+										<li>Giày Vans</li>
+										<li>Giày Boots </li>
+										<li>Giày Mọi
+											
+										</li>
+										<li>Giày Lười</li>
+									</ul>
+								</li>
+								<li>GIÀY NỮ
+									<ul>
+										<li>Giày Vải</li>
+										<li>Giày búp bê</li>
+										<li>Giày Lười</li>
+										<li>Giày Sandal
+											
+										</li>
+										<li>Giày Boots</li>
+									</ul>
+								</li>
+								<li>GIỚI THIỆU</li>
+								<li><a href="contact.html">LIÊN HỆ</a></li>
+							</ul>
+						</div>
+					</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-md-2 bg-grey">
+					<div class="category-slider">
+					<ul class="cl-grey">
+						<li>Giày Mori <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						<li>Giày Nike <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						<li>Giày Adidas <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						<li>Giày Converser <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						<li>Giày Lười <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						<li>Giày Mọi <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						<li>Giày Vans <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						<li>Giày Sandal <div class="icon-muiten"><span class="cl-grey-4 glyphicon glyphicon-menu-right"></span></div> </li>
+						
+
+					</ul>
+					</div>
+				</div>
+				<div class="col-md-10 margin-top">
+					<div class="slider bg-grey">
+						<img id="slide" src="img/banner.jpg">
+					</div>
+					<button class="next" onclick="next()"><span class="cl-white bold glyphicon glyphicon-chevron-right"></span></button> 
+					<button class="prev" onclick="prev()"><span class="cl-white bold glyphicon glyphicon-chevron-left"></span></button> 
+
+					<script type="text/javascript">
+					window.onload = function(){
+							setInterval("next()",3000);
+						}
+							var index = 0;
+							var imglist = new Array();
+							imglist[0] = "img/banner.jpg";
+							imglist[1] = "img/banner1.jpg";
+							imglist[2] = "img/banner2.jpg";
+							
+
+
+
+						function next() {
+							index++;
+							if(index > imglist.length-1){
+								index = 0;
+							} document.images["slide"].src = imglist[index];
+						}
+						function prev() {
+							index--;
+							if(index < 0){
+								index = imglist.length-1;
+							}
+							document.images["slide"].src = imglist[index];
+						}
+
+							
+
+							
+					</script>
+				</div>
+			</div>
+		</header>
+
+		<section class="container bg-grey-3">
+			
+			<div class="row margin-top-20 margin-bot-20 bg-white">
+				<div class="link"><p class=" cl-grey-3">Trang chủ / <span class="cl-red"> Giày Nam</span></p></div>
+			</div>
+			<div class="row bg-white map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.275479621477!2d106.68133571433674!3d10.79020046189093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d34aaf04cd%3A0x53a9da942a581fa1!2zMzA2IE5hbSBL4buzIEto4bufaSBOZ2jEqWEsIHBoxrDhu51uZyA2LCBRdeG6rW4gMywgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1462989911773" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="row margin-top-20">
+				<div class="col-md-6">
+					<div class="contact-infomation bg-white">
+						
+							<div class="box-heading bg-red">
+								<h4 class="cl-white ">Thông tin liên hệ</h4>
+							</div>
+							
+								
+								
+							<div class="row">
+									<div class="col-md-6">
+										<div class="box-hotline">
+												<h4>Hotline tư vấn 24/24</h4>
+												<p>0934 515 339</p>
+											
+										
+										<hr>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="box-hotline">
+												<h4>Email</h4>
+												<p>ducnhm@ducnhm.com</p>
+											<hr>
+										</div>
+									</div>
+									<div class="col-md-12">
+										
+											<div class="box-hotline">
+											
+												
+												<h4>Cửa hàng chính</h4>
+												<p>306 Nam Kì Khởi Nghĩa, Q.3, TP.HCM</p>
+												<h4>Chi nhánh</h4>
+												<p>Lầu 1 - Tòa nhà Lữ Gia - Số 70 Lữ Gia - P.15 - Q.11 - TP HCM</p>
+											
+											</div>
+									</div>
+								</div>
+							
+						
+					</div>
+				</div>
+				<div class="col-md-6 bg-white">
+					<div class="contact-sent">
+						
+							<div class="box-heading bg-red">
+								<h4 class="cl-white">Gửi tin nhắn nhận tư vấn</h4>
+							</div>
+							
+						
+							<div class="contact-form">
+									
+									<form accept-charset="UTF-8" action="/contact" id="contact" method="post">
+										<!-- <input name="FormType" type="hidden" value="contact">
+										<input name="utf8" type="hidden" value="true"> -->
+									
+									
+										<div class="form-group">
+											<label>Họ và tên: <span class="cl-red">*</span></label>
+											<input type="text" class="form-control" >
+										</div>
+										<div class="form-group">
+											<label for="">Địa chỉ Email: <span class="cl-red">*</span></label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="">Bình luận: <span class="cl-red">*</span></label>
+											<textarea class="form-control" rows="10" name="contact[Body]"></textarea>
+										</div>
+										<div class="style-form-group">
+											<button type="submit" class="cl-white btn btn-default bg-green">Gửi</button>
+											<button type="reset" class="cl-white btn btn-default bg-green">Xóa</button>
+										</div>
+									</form>
+							</div>
+							
+						
+					</div>
+				</div>
+			</div>
+			
+			
+		</section>
+		<footer class="container-fluid bg-grey-3">
+			<div class="row margin-top-40 margin-bot-20">
+				<div class="cooperate bg-white cl-grey">
+					<span class="cl-grey-2 bold glyphicon glyphicon-chevron-left"></span>
+					<!-- <div class="img-cooperate"></div>
+					<div class="img-cooperate"></div>
+					<div class="img-cooperate"></div>
+					<div class="img-cooperate"></div> -->
+					<img class="img-cooperate" src="img/hoptac/a.png">
+					<img class="img-cooperate" src="img/hoptac/b.png">
+					<img class="img-cooperate" src="img/hoptac/c.png">
+					<img class="img-cooperate" src="img/hoptac/d.png">
+					<img class="img-cooperate" src="img/hoptac/e.png">
+					<img class="img-cooperate" src="img/hoptac/f.png">
+					<span class="cl-grey-2 bold glyphicon glyphicon-chevron-right"></span>
+
+				</div>
+			</div>
+			<div class="row bg-grey">
+				<div class="col-md-3">
+					
+				</div>
+				<div class="col-md-3">
+					<div class="box-footer-1">
+						<img src="img/icon-service-1.png">
+						<p class="cl-white bold">Miễn phí giao hàng</p>
+						<p class="cl-grey">Cho đơn hàng trên 1 triệu</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="box-footer-1">
+						<img src="img/icon-service-2.png">
+						<p class="cl-white bold">Trở thành thành viên vip</p>
+						<p class="cl-grey">Chi với đơn hàng trên 2 triệu đồng</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="box-footer-1">
+						<img src="img/icon-service-3.png">
+						<p class="cl-white bold">Hỗ trợ khách hàng 24/24</p>
+						<p class="cl-grey">Tất cả các ngày trong tuần</p>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="row bg-grey-2">
+				<div class="col-md-3">
+					<div class="box-footer-4 bg-green">
+						<p class="logo-foot cl-white bold">Shoe's</p>
+						<p class="p-introduce" >" Với đội ngữ nhân viên bán hàng được đào tạo, luôn sẵn sàng phục vụ quý khách hàng tận tâm, chu đáo và nhiệt tình. Giày thời trang <span class="bold cl-white">Shoe's</span> luôn luôn chào đón quý khách đến mua sắm tại các Cửa hàng và Websites. " </p>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="box-footer-2">
+						<p class="cl-white bold">Đăng ký nhận tin mới</p> 
+						<p class="cl-grey">Đăng nhận các tin chương trình khuyến mãi sớm nhất</p>
+						<center>
+				            <div class="search">
+				            	<form class="navbar-form navbar-middle" role="search">
+	    						<div class="form-group form-search">
+	        						<input type="text" size="30" class="form-control" placeholder="Email của bạn ...">
+	    						</div>
+	    						<button type="submit" class="btn bg-green cl-white form-search"><span class="glyphicon glyphicon-send"></span></button>
+							</form>
+				            </div>
+	                       </center>
+
+					</div>
+					<hr class="bg-grey">
+					<div class="box-footer-3">
+						<p class="bold cl-white">Phương thức thanh toán</p> <br>
+						<img src="img/payment.png">
+						
+					</div>
+
+				</div>
+			</div>
+
+		</footer>
+
+
+	</body>
+</html>

@@ -1,0 +1,326 @@
+* {padding:0px;margin:0px;}
+
+
+body {padding: 0 0;
+    margin: 0 0;
+    font-family: "Roboto",Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1.5em;
+    height: 100%;
+    background-color: #E8E8E8;
+
+    }
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto-light;
+    src: url(../font/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: alsscrp;
+    src:
+url(../font/alsscrp.ttf)
+
+}
+@font-face{
+    font-family: marguerite;
+    src: url(../font/BORING.ttf);
+}
+/* màu nền */
+.bg-red {background: #ff6666}
+.bg-grey {background: #333333}
+.bg-grey-2 {background: #111111}
+.bg-grey-3 {background: #E8E8E8}
+.bg-green {background: #66cc33}
+.bg-white {background: white}
+/* màu sắc chữ */
+.cl-white {color: white}
+.cl-grey {color : #999999;}
+.cl-grey-2 {color: #CCCCCC;}
+.cl-grey-3 {color: #777777;}
+.cl-grey-4 {color: #555555;}
+.cl-red {color : #ff6666;}
+.cl-green {color:#66cc33 }
+/* thuộc tính text */
+.bold {font-weight: bold;}
+.font-16 {font-size: 16px;}
+.font-12 {font-size: 12px;}
+.border-green {border: 1px solid #66cc66;border-top:none;}
+.border-red {border: 1px solid #ff6666; border-top: none;}
+.txt-center {text-align:  center;}
+.opacity {opacity: 0.1}
+.txt-dec {text-decoration: none;}
+/* xu *ử lý khoảng cách */
+.margin-top-5 {margin-top: 5px;}
+.margin-top-40 {margin-top: 40px}
+.margin-top-20 {margin-top: 20px}
+.margin-right {margin-right: 20px;}
+.margin-bot-20 {margin-bottom: 20px}
+.margin-left {margin-left: 40px;}
+
+.fl-left {float: left;}
+.fl-right {float: right;}
+/* xử lý padding col-md */
+.col-md-10 {padding: 0px;}
+.col-md-2 {padding: 0px;}
+.col-md-3 {padding: 0px;}
+.col-md-9 {padding: 0px;}
+.col-md-12 {padding-left: 0px;}
+.col-md-6 {padding-left: 0px;}
+
+
+
+/* clear */
+.clear {clear: both;}
+/* thành phần đầu trang web */
+.top-header {width: 100%;float: right;padding: 15px 0px 15px 0px;font-family: Roboto-light;}
+.top-header .box-top-header {width: 100px;float: right;margin-right: 5px;height: 30px;text-align: center;line-height: 30px;}
+
+
+/* logo web site */
+.logo {width: 100%;margin: 15% 0% 0% 10%;height: 120px;font-family: alsscrp;font-size: 70px;}
+.logo p {font-family: alsscrp;font-size: 70px;}
+/* search form*/
+.search {max-width: 45%;height: auto; margin-top: 60px;border-radius: 3px;}
+.search .input-search {max-width: 90%;float: left;}
+.search .input-search  input[type="text"]{border: none;background-color: transparent;}
+.search .icon-search {width: 30px;height: 30px;float: right;text-align: center;line-height: 30px;border-radius: 5px;}
+/* giỏ hàng */
+.cart {width: 40px;height: 40px ;margin-top: 60px;float: right;margin-right: 35px;border-radius: 50px;position: relative;text-align: center;line-height: 40px}
+.cart .htron-sm {width: 23px;height: 23px;position: absolute;border-radius: 50px;right: -10px;top: -8px;line-height: 23px;}
+
+/* tiêu đề nằm trên nav */
+.title-category {width: 100%;height: 40px;text-align: left;line-height: 40px;position: relative;padding-left: 15px; }
+.title-category .icon-category {width: 20px ;height: 20px;float: left;margin: 0px 10px 0px 0px;}
+
+/* danh mục bên trái slideshow */
+.category-slider {width: 100%;}
+.category-slider ul {list-style: none;padding: 0px;margin:0px;}
+.category-slider ul li {width: 100%;padding: 0px 2px 0px 15px ;height: 45px;text-align: left;line-height:45px;border-bottom: 0.3px solid #4F4F4F}
+.category-slider ul li .icon-muiten {width: 10px ;height: 10px;float: right;margin-right: 4px;}
+.category-slider ul li:hover {background: #ff6666;color: white}
+
+
+
+
+
+/* menu webiste */
+.menu {width: 100%;}
+.menu ul {list-style: none;padding:0px;margin: 0px;}
+.menu ul li {float: left;width: 150px;height: 40px;line-height: 40px;text-align: center;}
+.menu ul li a {color: white;}
+.menu ul li a:hover {text-decoration: none;}
+.menu ul li:hover {border-bottom: 3px solid #ff6666 }
+.menu ul li ul {width: 150px;z-index: 10000;position: absolute;list-style: none;display: none;font-weight: 100;}
+.menu ul li:hover ul {display: block;}
+.menu ul li ul li {width: 100%;text-align: left;padding-left: 5px;background-color: #333333;margin-top: 1px;}
+.menu ul li ul li:hover {border-bottom: none;background: #ff6666 }
+/*.menu ul li ul li ul {width: 150px;left: 152px;display: none;top: 123px; border: }
+.menu ul li ul li:hover ul {display: block;}*/
+
+/* slideshow */
+.slider {width:99.9%;height: 359px;margin: 1px 0px 0px 1px;position: relative;}
+.slider img {width: 100%;height: 100%}
+.next {position: absolute;top: 166px;right: 10px;border: none;background: none;border: 1px solid #CFCFCF;border-radius: 3px;}
+.next span {font-size: 20px}
+.prev {position: absolute;top: 166px;left: 10px;border: none;background: none;border: 1px solid #CFCFCF;border-radius: 3px;}
+.prev span {font-size: 20px}
+
+
+/* selling */
+.title-selling {width: 100%;line-height: 40px;text-align: center;clear: both;}
+.product-selling {width: 16.6%;height: auto;float: left;border-right: 1px solid #E8E8E8;padding: 1%;margin: 0px;}
+.product-selling img {width: 70%}
+.product-selling:last-child {border-right: none;}
+
+/* tiêu đề block two */
+.title-block-two {width: 100%;height: 40px;line-height: 40px;text-align: left;padding-left: 15px;clear: both;}
+.title-block-two p {float: left;}
+.title-block-two .icon-next-pre {width: 20px;height: 20px;margin: 10px 15px 0px 0px;float: right;border: 1px solid #E8E8E8;text-align: center;line-height: 20px; }
+
+
+.block-two {width: 100%;}
+.block-two ul {list-style: none;padding: 0px;margin: 0px}
+.block-two ul li {width: 25.001%;height: auto;float: left; border-bottom: 1px solid #E8E8E8;border-right: 1px solid #E8E8E8;padding: 0px 10px 10px 10px;margin-bottom: 0px;}
+
+.block-two .img-pro {width: 70%;height: 180px;margin-bottom: 10px;}
+.block-two .gach-thang {width: 1px;height: 33px;line-height: 33px;text-align: center;background-color: #CCCCCC;margin-left: 14px;}
+
+
+.block-three {width: 100%;height: auto;border-bottom: 1px solid #E8E8E8;border-right: 1px solid #E8E8E8;padding: 10px;position: relative;}
+.block-three img {width: 60%; height: 112px;}
+.block-three .htron-top {width: 50px;height:40px;border-radius: 50px;position: absolute;top: 10px;right: 30px;clear: both;}
+/*.block-three .htron-top img {width: 40px; heig*/ht: 40px;clear: both;}
+.block-three:last-child {border-bottom: none;}
+
+
+/* hợp tác*/
+.cooperate {width: 100%;height: 120px; padding: 30px 27px 0px 27px;}
+.cooperate .img-cooperate {margin-right: 53px;}
+
+/* footer */ 
+.box-footer-1 {width: 100%;padding: 25px 0px 25px 0px;}
+.box-footer-1 img {width: 50px;height: 50px;float: left;margin-right: 10px}
+.box-footer-1 p {}
+
+.box-footer-2 {width: 100%;padding: 45px 0px 25px 0px;text-align: center;}
+/* phương thức thanh toán */ 
+
+.box-footer-3 {width: 100%;}
+.box-footer-3 p {float: left; clear: both;width: 100%;margin-bottom: 20px}
+.box-footer-3 img {float: left;margin-right: 5px; }
+/* Giới thiệu nằm ở footer */ 
+.box-footer-4 {margin-top: -112px;
+    width: 250px;
+    
+    min-height: 465px;
+    position: relative;
+    left: 25px;
+   
+    padding: 5%
+   }
+.box-footer-4 .logo-foot {font-family: alsscrp;font-size: 70px;text-align: center;}
+.box-footer-4 .p-introduce {text-align: justify;font-size: 14px;font-family: marguerite;color: #F8F8FF}
+.box-footer-4 .p-introduce span {font-size: 16px}
+
+
+
+
+/* product detail  */
+.link-category {width: 100%;padding: 20px 0px 0px 7%;display: inherit;}
+.box-product-detail {width: 100%;padding: 25px 0px 20px 0px;}
+.box-product-detail .img-avt {width: 100%;height: 270px;}
+.box-product-detail  .img-desc {width: 22%;float: left;height: 80px;margin: 10px 5px 0px 5px;}
+.box-product-detail h4 {margin: 0px 0px 10px 0px}
+.txt-detail {margin: 15px;text-align: justify;}
+
+
+
+/* page- cart  */
+.btn-refresh {float: right;}
+.box-cart-bot {padding: 15px;height: 60px;}
+.txt-total {font-size: 20px;}
+/* box- cart  */
+
+
+
+/* form-login and register */
+.panel-login {
+    border-color: #ccc;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+    color: #00415d;
+    background-color: #fff;
+    border-color: #fff;
+    text-align:center;
+}
+.panel-login>.panel-heading a{
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+    color: #cc3333;
+    font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    clear: both;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+    height: 45px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+    outline:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: #ccc;
+}
+.btn-login {
+    background-color: #cc3333;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #cc3333;
+}
+.btn-login:hover,
+.btn-login:focus {
+    color: #fff;
+    background-color: #cc3333;
+    border-color: #53A3CD;
+}
+.forgot-password {
+    text-decoration: underline;
+    color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+    text-decoration: underline;
+    color: #666;
+}
+
+.btn-register {
+    background-color: #1CB94E;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+    color: #fff;
+    background-color: #cc3333;
+    border-color: #1CA347;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* search form */
